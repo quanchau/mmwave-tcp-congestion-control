@@ -1,0 +1,57 @@
+SYSTEM BANDWIDTH: 1.00001e+09
+bandwidth 0 = 1.00001e+09
+0x7fa9d44080d0 1 100
+SetBeamformingVector between UE 0x7fa9d4400470 and enbDevice 0x7fa9f451d720
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=4,h_UT=1.6
+0x7fa9f451d720
+0x7fa9d4400470
+m_lteOutputFilename LTE.txt
+UE register to enb 2
+0.1s: 	0 Mbit/s
+0.2s: 	803.376 Mbit/s
+0.3s: 	1000.01 Mbit/s
+0.4s: 	1000.01 Mbit/s
+0.5s: 	1000.01 Mbit/s
+0.6s: 	1000.01 Mbit/s
+0.7s: 	999.936 Mbit/s
+0.8s: 	999.936 Mbit/s
+0.9s: 	1000.01 Mbit/s
+************************--------------------Change Speed-------------------------------*****************
+1s: 	1000.08 Mbit/s
+UMi-StreetCanyon scenario, channel condition is fixed to be n, h_BS=4,h_UT=1.6
+0x7fa9d4400470
+0x7fa9f451d720
+1.1s: 	682.848 Mbit/s
+1.2s: 	4.96 Mbit/s
+1.3s: 	244.28 Mbit/s
+1.4s: 	506.08 Mbit/s
+1.5s: 	732.56 Mbit/s
+1.6s: 	855.12 Mbit/s
+1.7s: 	859.44 Mbit/s
+1.8s: 	808.8 Mbit/s
+1.9s: 	877.04 Mbit/s
+2s: 	948.96 Mbit/s
+2.1s: 	961.12 Mbit/s
+2.2s: 	973.12 Mbit/s
+2.3s: 	1021.6 Mbit/s
+2.4s: 	1019.2 Mbit/s
+2.5s: 	856.16 Mbit/s
+2.6s: 	1027.6 Mbit/s
+2.7s: 	1048.72 Mbit/s
+2.8s: 	1057.12 Mbit/s
+2.9s: 	1074.96 Mbit/s
+3s: 	1091.2 Mbit/s
+3.1s: 	1080.84 Mbit/s
+3.2s: 	1000.01 Mbit/s
+3.3s: 	1000.01 Mbit/s
+3.4s: 	999.936 Mbit/s
+3.5s: 	999.936 Mbit/s
+3.6s: 	999.936 Mbit/s
+3.7s: 	1000.01 Mbit/s
+3.8s: 	1000.08 Mbit/s
+3.9s: 	1000.08 Mbit/s
+4s: 	1000.01 Mbit/s
+4.1s: 	1000.01 Mbit/s
+4.2s: 	1000.01 Mbit/s
+4.3s: 	999.936 Mbit/s
+4.4s: 	999.936 Mbit/s

@@ -1,0 +1,56 @@
+SetBeamformingVector between UE 0x7fdccbf254b0 and enbDevice 0x7fdccbf21050
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=4,h_UT=1.6
+0x7fdccbf21050
+0x7fdccbf254b0
+m_lteOutputFilename LTE.txt
+UE register to enb 2
+0.1s: 	0 Mbit/s
+0.2s: 	308.64 Mbit/s
+0.3s: 	603.28 Mbit/s
+0.4s: 	622.64 Mbit/s
+0.5s: 	572.24 Mbit/s
+0.6s: 	531.12 Mbit/s
+0.7s: 	556.96 Mbit/s
+0.8s: 	556.24 Mbit/s
+0.9s: 	600.88 Mbit/s
+************************--------------------Change Speed-------------------------------*****************
+1s: 	624.16 Mbit/s
+UMi-StreetCanyon scenario, channel condition is fixed to be n, h_BS=4,h_UT=1.6
+0x7fdccbf254b0
+0x7fdccbf21050
+1.1s: 	420.96 Mbit/s
+1.2s: 	29.12 Mbit/s
+Fragment too small in txonBuffer, pos 1
+Too small, not forwarded
+1.3s: 	13.44 Mbit/s
+1.4s: 	0 Mbit/s
+1.5s: 	0 Mbit/s
+1.6s: 	0 Mbit/s
+1.7s: 	0 Mbit/s
+1.8s: 	0 Mbit/s
+1.9s: 	0 Mbit/s
+2s: 	0 Mbit/s
+2.1s: 	0 Mbit/s
+2.2s: 	0 Mbit/s
+2.3s: 	16.48 Mbit/s
+2.4s: 	46.48 Mbit/s
+2.5s: 	53.2 Mbit/s
+2.6s: 	88.72 Mbit/s
+2.7s: 	114.8 Mbit/s
+2.8s: 	138.72 Mbit/s
+2.9s: 	161.36 Mbit/s
+3s: 	186.4 Mbit/s
+3.1s: 	210.08 Mbit/s
+3.2s: 	237.76 Mbit/s
+3.3s: 	254.88 Mbit/s
+3.4s: 	282.8 Mbit/s
+3.5s: 	309.6 Mbit/s
+3.6s: 	324.64 Mbit/s
+3.7s: 	357.52 Mbit/s
+3.8s: 	381.76 Mbit/s
+3.9s: 	393.68 Mbit/s
+4s: 	426.8 Mbit/s
+4.1s: 	443.76 Mbit/s
+4.2s: 	469.36 Mbit/s
+4.3s: 	498.96 Mbit/s
+4.4s: 	508.64 Mbit/s
