@@ -1,8 +1,8 @@
 # Graph Throughtput from ns-3 file using line graph
 #
-# Command line run: python throughput.py [scenario-number] [tcp_version]
-# Example: python throughput.py 2 new-reno
-# Example 2: python throughput.py 4 all 
+# Command line run: python throughput.py [simulation-name] [tcp_version]
+# Example: python throughput.py 1b new-reno
+# Example 2: python throughput.py 1d all 
 # (all to put all tcp versions in the same graph)
 #
 # Author: Quan Chau, quananhchau@gmail.com
@@ -17,17 +17,17 @@ import sys
 if len(sys.argv) < 3:
 	print("Not enough arguments. Please read file instruction for the correct format.")
 
-scenario = sys.argv[1].lower()
+simulation = sys.argv[1].lower()
 tcp_version = sys.argv[2].lower()
 
 # The text file to read from must have the name "cw.txt". If using a different name, please change the line below
-read_file_path = "./scenario-{}/[tcp_version]/throughput.txt".format(scenario)
+read_file_path = "./simulation-{}/[tcp_version]/throughput.txt".format(simulation)
 
 # The output file contains the html version of the graph
 if tcp_version == "all":
-	output_file_path = "./scenario-{}/throughput.html".format(scenario)
+	output_file_path = "./simulation-{}/throughput.html".format(simulation)
 else:
-	output_file_path = "./scenario-{}/{}/throughput.html".format(scenario, tcp_version)
+	output_file_path = "./simulation-{}/{}/throughput.html".format(simulation, tcp_version)
 
 def test_float(inp):
 	try :  

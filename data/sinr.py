@@ -1,8 +1,8 @@
 # Graph SINR from ns-3 file using line graph
 #
-# Command line run: python sinr.py [scenario-number] [tcp_version]
-# Example: python sinr.py 2 new-reno
-# Example 2: python sinr.py 4 all 
+# Command line run: python sinr.py [simulation-name] [tcp_version]
+# Example: python sinr.py 1b new-reno
+# Example 2: python sinr.py 1d all 
 # (all to put all tcp versions in the same graph)
 #
 # Author: Quan Chau, quananhchau@gmail.com
@@ -17,17 +17,17 @@ import sys
 if len(sys.argv) < 3:
 	print("Not enough arguments. Please read file instruction for the correct format.")
 
-scenario = sys.argv[1].lower()
+simulation = sys.argv[1].lower()
 tcp_version = sys.argv[2].lower()
 
 # The text file to read from must have the name "cw.txt". If using a different name, please change the line below
-read_file_path = "./scenario-{}/[tcp_version]/sinr.txt".format(scenario)
+read_file_path = "./simulation-{}/[tcp_version]/sinr.txt".format(simulation)
 
 # The output file contains the html version of the graph
 if tcp_version == "all":
-	output_file_path = "./scenario-{}/sinr.html".format(scenario)
+	output_file_path = "./simulation-{}/sinr.html".format(simulation)
 else:
-	output_file_path = "./scenario-{}/{}/sinr.html".format(scenario, tcp_version)
+	output_file_path = "./simulation-{}/{}/sinr.html".format(simulation, tcp_version)
 
 def get_sinr_arr(tcp_version_arg):
 	file = open(read_file_path.replace("[tcp_version]", tcp_version_arg))
