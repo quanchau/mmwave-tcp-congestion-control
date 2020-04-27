@@ -151,6 +151,19 @@ RttChange (Ptr<OutputStreamWrapper> stream, Time oldRtt, Time newRtt)
   *stream->GetStream () << Simulator::Now ().GetSeconds () << "\t" << oldRtt.GetSeconds () << "\t" << newRtt.GetSeconds () << std::endl;
 }
 
+static void
+RtoChange (Ptr<OutputStreamWrapper> stream, Time oldRto, Time newRto)
+{
+  *stream->GetStream () << Simulator::Now ().GetSeconds () << "\t" << oldRto.GetSeconds () << "\t" << newRto.GetSeconds () << std::endl;
+}
+
+static void
+SegnumChange (Ptr<OutputStreamWrapper> stream, SequenceNumber32 old, SequenceNumber32 nextTx)
+{
+  *stream->GetStream () << Simulator::Now ().GetSeconds () << "\t" << nextTx << std::endl;
+}
+
+
 
 void
 ChangeSpeed (Ptr<Node> n, Vector speed)
@@ -363,6 +376,12 @@ main (int argc, char *argv[])
 
   Ptr<OutputStreamWrapper> stream3 = asciiTraceHelper.CreateFileStream ("mmWave-tcp-rtt-yeah.txt");
   ns3TcpSocket->TraceConnectWithoutContext ("RTT", MakeBoundCallback (&RttChange, stream3));
+
+  Ptr<OutputStreamWrapper> stream4 = asciiTraceHelper.CreateFileStream ("rto.txt");
+  ns3TcpSocket->TraceConnectWithoutContext ("RTO", MakeBoundCallback (&RtoChange, stream4));
+
+  Ptr<OutputStreamWrapper> stream5 = asciiTraceHelper.CreateFileStream ("segnum.txt");
+  ns3TcpSocket->TraceConnectWithoutContext ("NextTxSequence", MakeBoundCallback (&SegnumChange, stream5));
 
   // Application at UE starts at 0.1 second
   app->SetStartTime (Seconds (0.1));
