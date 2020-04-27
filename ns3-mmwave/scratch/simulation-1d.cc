@@ -393,6 +393,8 @@ main (int argc, char *argv[])
   Ptr<Socket> ns3TcpSocket = Socket::CreateSocket (ueNodes.Get (0), TcpSocketFactory::GetTypeId ());
 
   Ptr<MyApp> app = CreateObject<MyApp> ();
+  // Configure receiver address, packet size, number of packets, data rates 
+  // (take a look back at the parameters in the App construstor at the beginning of this file)
   app->Setup (ns3TcpSocket, sinkAddress, 1000, 500000000, DataRate ("1000Mb/s"));
   ueNodes.Get (0)->AddApplication (app);
 
