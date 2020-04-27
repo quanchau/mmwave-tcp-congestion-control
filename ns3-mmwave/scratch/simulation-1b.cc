@@ -389,7 +389,7 @@ main (int argc, char *argv[])
   Ptr<OutputStreamWrapper> stream4 = asciiTraceHelper.CreateFileStream ("rto.txt");
   ns3TcpSocket->TraceConnectWithoutContext ("RTO", MakeBoundCallback (&RtoChange, stream4));
 
-  Ptr<OutputStreamWrapper> stream5 = asciiTraceHelper.CreateFileStream ("segnum.txt");
+  Ptr<OutputStreamWrapper> stream5 = asciiTraceHelper.CreateFileStream ("seqnum.txt");
   ns3TcpSocket->TraceConnectWithoutContext ("NextTxSequence", MakeBoundCallback (&SegnumChange, stream5));
 
   ueDevs.Get (0)->TraceConnectWithoutContext ("PhyRxDrop", MakeCallback (&RxDrop));
