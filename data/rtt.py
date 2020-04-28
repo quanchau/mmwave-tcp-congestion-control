@@ -110,7 +110,7 @@ if tcp_version == "all":
 	source1 = ColumnDataSource(dict(x=get_rtt_time_arr("new-reno"), y=get_rtt_arr("new-reno")))
 	plot.circle(x='x', y='y', source=source1, color="#002953")
 
-	source2 = ColumnDataSource(dict(x=get_rtt_time_arr("yeAH"), y=get_rtt_arr("yeAH")))
+	source2 = ColumnDataSource(dict(x=get_rtt_time_arr("yeah"), y=get_rtt_arr("yeah")))
 	plot.circle(x='x', y='y', source=source2, color="#c7f464")
 
 	source3 = ColumnDataSource(dict(x=get_rtt_time_arr("hybla"), y=get_rtt_arr("hybla")))

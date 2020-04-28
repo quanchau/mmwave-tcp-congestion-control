@@ -89,14 +89,14 @@ if tcp_version != "all":
 
 # Change the width and height as suitable and set x_range, y_range to see the data better
 plot = figure(
-    title=t, plot_width=700, plot_height=400, x_range=(0, 16))
+    title=t, plot_width=700, plot_height=400, x_range=(0, 16), y_range=(0, 1500))
 
 if tcp_version == "all":
 	source1 = ColumnDataSource(dict(x=get_throughput_time_arr("new-reno"), y=get_throughput_arr("new-reno")))
 	glyph1 = Line(x="x", y="y", line_color="#002953", line_width=2)
 	plot.add_glyph(source1, glyph1)
 
-	source2 = ColumnDataSource(dict(x=get_throughput_time_arr("yeAH"), y=get_throughput_arr("yeAH")))
+	source2 = ColumnDataSource(dict(x=get_throughput_time_arr("yeah"), y=get_throughput_arr("yeah")))
 	glyph2 = Line(x="x", y="y", line_color="#c7f464",  line_width=2)
 	plot.add_glyph(source2, glyph2)
 
